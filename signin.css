@@ -10,6 +10,10 @@ body{
     background-image:url("assets/logo.png"),linear-gradient(rgba(0,0,0,0.8));
     background-repeat: space space;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 .container{
     border: 4px solid white;
     background-color: white;    
