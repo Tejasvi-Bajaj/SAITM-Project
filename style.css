@@ -125,7 +125,7 @@ footer{
     }
 
     .container {
-        background:linear-gradient(deg,red 10%,grey 40%,black 90%);
+        background:linear-gradient(110deg,red 10%,grey 40%,black 90%);
         align-items: center;
         flex-direction: column;
         height: auto;
