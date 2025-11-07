@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+nav{
+    padding:0 20px;
+    align-items: center;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+a{
+    text-decoration: none;
+}
+.logo img{ 
+    width: 150px;
+}
+.func li{
+    list-style: none;   
+}
+.func ul{
+    display: flex;
+    gap: 30px;
+}
+.func ul li a::after{
+    content: '';
+    margin: auto;
+    height: 2px;
+    display: block;
+    width: 0%;
+    background:#f44336;
+    transition: 0.3s ease-in;
+}
+.func ul li a:hover::after{
+    width: 100%;
+}
+.btn{
+    width: 200px;   
+    height: 30px;
+    display: flex;
+    flex-direction:coumn;
+    gap: 10px;
+}
+.btn a{
+    font-family: arial;
+}
+.btn button{
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    color: white;
+    background-color: red;
+    border: 2px white dashed;
+}
+.btn button:hover{
+    background: radial-gradient(red,black);
+}
+.container{
+    background:linear-gradient(30deg,red 10%,grey 40%,black 90%);
+    display: flex;
+    height:100vh;
+}
+.image{
+    margin:20% 50px;
+}
+.headings{
+    margin:20%  50px;
+}
+.headings .btn{
+    margin: 20px 0;
+}
+#down{
+    height: 100vh;
+
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 15vh;
+}
+.container12{
+    margin:12px 0;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me - Dark Fantasy Theme</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+  }
+
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #1a001a, #000000);
+    padding: 40px 10%;
+  }
+
+  .about-left, .about-right {
+    flex: 1 1 45%;
+    min-width: 300px;
+    padding: 20px;
+  }
+
+  .about-left {
+    animation: fadeInLeft 1.5s ease;
+  }
+
+  .about-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(20, 0, 30, 0.5);
+    border: 2px solid red;
+    box-shadow: 0 0 20px orange;
+    min-height: 300px;
+    border-radius: 10px;
+  }
+
+  .about-left h1 {
+    font-size: 2.5rem;
+    color: red;
+    text-shadow: 0 0 10px orange;
+  }
+
+  .about-left p {
+    line-height: 1.7;
+    font-size: 1rem;
+    margin-top: 20px;
+    color: orange;
+  }
+
+  @keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+      text-align: center;
+    }
+    .about-left h1 {
+      font-size: 2rem;
+    }
+    .about-right {
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<section class="about-section">
+  <div class="about-left">
+    <h1>About Me</h1>
+    <p>
+      I’m a B.Tech CSE first-year student with a strong interest in web development and technology. I love transforming creative ideas into responsive, user-friendly, and visually appealing websites. My focus is on building clean and efficient designs using HTML, CSS, and other modern tools while continuously learning new concepts to enhance my skills.
+      <br>
+      As a learner, I’m passionate about understanding how the web works — from front-end design to the logic that powers the back end. I enjoy solving problems, experimenting with new frameworks, and creating projects that combine both creativity and functionality.
+      <br>
+      I believe every line of code is a step toward innovation, and I’m excited to grow as a developer by exploring real-world projects, learning from others, and contributing to the tech community.
+    </p>
+  </div>
+
+  <div class="about-right">
+    <img src="assets/BGMI.jpg" alt="My Photo" style="width:100%; border-radius:10px;"> 
+  </div>        
+</section>
+
+</body>
+</html>

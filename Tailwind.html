@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Made by Chatgpt</title>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-blue-600">MyWebsite</h1>
+
+        <!-- Hamburger Button -->
+        <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-6">
+          <li><a href="#home" class="hover:text-blue-600 focus:text-blue-600 focus:outline-none">Home</a></li>
+          <li><a href="#features" class="hover:text-blue-600 focus:text-blue-600 focus:outline-none">Features</a></li>
+          <li><a href="#contact" class="hover:text-blue-600 focus:text-blue-600 focus:outline-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="menu" class="hidden md:hidden px-4 pb-4 bg-white border-t border-gray-200">
+        <a href="#home" class="block py-2 hover:text-blue-600 focus:text-blue-600">Home</a>
+        <a href="#features" class="block py-2 hover:text-blue-600 focus:text-blue-600">Features</a>
+        <a href="#contact" class="block py-2 hover:text-blue-600 focus:text-blue-600">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="text-center py-20 px-6 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+      <h2 class="text-4xl sm:text-5xl font-extrabold mb-4 leading-tight">Build Stunning Websites Fast</h2>
+      <p class="text-lg sm:text-xl mb-6 max-w-2xl mx-auto">Powered by Tailwind CSS, your website looks beautiful and responsive without writing custom CSS.</p>
+      <a href="#features" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 focus:ring-2 focus:ring-white transition">Learn More</a>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 px-6 max-w-7xl mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-10">Awesome Features</h3>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <div class="text-blue-600 text-4xl mb-4">⚡</div>
+          <h4 class="text-xl font-semibold mb-2">Fast Development</h4>
+          <p>Tailwind lets you build modern websites quickly with utility-first classes.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <div class="text-blue-600 text-4xl mb-4">🎨</div>
+          <h4 class="text-xl font-semibold mb-2">Beautiful Design</h4>
+          <p>Built-in design tokens help you stay consistent and create polished interfaces.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <div class="text-blue-600 text-4xl mb-4">📱</div>
+          <h4 class="text-xl font-semibold mb-2">Fully Responsive</h4>
+          <p>Websites look great on all devices without extra media queries.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-blue-600 text-white py-16 text-center px-6">
+      <h3 class="text-3xl font-bold mb-6">Get in Touch</h3>
+      <p class="mb-8 text-lg">Have a question or want to work together?</p>
+      <a href="mailto:hello@example.com" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 focus:ring-2 focus:ring-white transition">Contact Us</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm sm:text-base">
+      <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+      const menuBtn = document.getElementById('menu-btn');
+      const menu = document.getElementById('menu');
+      menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    </script>
+
+</body>
+</html>
